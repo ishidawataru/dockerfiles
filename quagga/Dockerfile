@@ -10,7 +10,7 @@ RUN mkdir /var/log/quagga && chown quagga:quagga /var/log/quagga
 RUN mkdir /var/run/quagga && chown quagga:quagga /var/run/quagga
 RUN apt-get update && \
         apt-get install -qy wget unzip autoconf libtool gawk make supervisor telnet
-RUN wget --no-check-certificate https://github.com/CumulusNetworks/quagga/archive/master.zip && \
+RUN wget --no-check-certificate https://github.com/ishidawataru/quagga/archive/master.zip && \
         unzip master.zip && \
         (cd quagga-master && \
          ./bootstrap.sh && \
